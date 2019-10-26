@@ -1,0 +1,299 @@
+
+== LEARN MORE PHYTON 3 THE HARD WAY
+
+= Introduction
+
+
++*In[6]:*+
+[source, ipython3]
+----
+print("HELLO WORD")
+----
+
+
++*Out[6]:*+
+----
+HELLO WORD
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+In this firts program we´ll do a introduction book learn more phyton 3 the hard away and explain some exercises
+----
+
+image:https://images-eu.ssl-images-amazon.com/images/I/51pgZJnx0YL.jpg[``portada
+del libro'']
+
+= practice 0 ``the setup''
+
+In this first practice we saw the types of programs that we can use the
+libraries etc. besides how to install phyton on windows, macOS and linux
+
+image:https://www.ecured.cu/images/2/26/Sw_programacion.jpg[types of
+software]
+
+= practice 1 ``A good firts program''
+
+in this part we seen how we can print text on the program
+
+
++*In[8]:*+
+[source, ipython3]
+----
+print("this text will appear on the screen")
+----
+
+
++*Out[8]:*+
+----
+this text will appear on the screen
+----
+
+= practice 2 ``Comments and Pound Characters''
+
+To comment, you will follow as follows:
+
+
++*In[10]:*+
+[source, ipython3]
+----
+print("this text will appear on the screen")#but now you can write comments like a numbers or other things
+#and this text wont appear on the screen
+----
+
+
++*Out[10]:*+
+----
+this text will appear on the screen
+----
+
+= practice 3 ``Numbers and Math''
+
+Here what we are seeing is how to do mathematical operations in
+programming below I will leave some examples
+
+
++*In[18]:*+
+[source, ipython3]
+----
+print("80 * 50 =", 80*50)
+print("70 / 4 =",70/4)
+print("148524 % 16 =", 148524%16)
+#for this to work you have to put a "," after a text so it can run.
+----
+
+
++*Out[18]:*+
+----
+80 * 50 = 4000
+70 / 4 = 17.5
+148524 % 16 = 12
+----
+
+= practice 4 ``Variables and Names''
+
+This is more than anything to give you a comment using the math in them
+for example to make an operation that instead of writing a number is a
+word, letter or symbol.
+
+
++*In[21]:*+
+[source, ipython3]
+----
+n = 200
+c = 400 
+s =45
+
+print("we need", n ,"to complete" , c, " and my father will give me" , s ,"today")
+----
+
+
++*Out[21]:*+
+----
+we need 200 to complete 400  and my father will give me 45 today
+----
+
+= practice 5 ``More Variables and Printing''
+
+the chains are used and I know that you will wonder how it is used well
+because it is very sensillo just see the following example and analyze.
+
+
++*In[33]:*+
+[source, ipython3]
+----
+m = 'cockies'
+j = 'tacos'
+r = 'guitar'
+print(f"maria likes {m}.")
+print(f"karla is eating {j} and her brother is playing {r}")
+----
+
+
++*Out[33]:*+
+----
+maria likes cockies.
+karla is eating tacos and her brother is playing guitar
+----
+
+= practice 6 ``Strings and Text''
+
+Like the previous practice we will see what chains are more without
+enbargo we will be using them in a more complex way
+
+
++*In[37]:*+
+[source, ipython3]
+----
+s = 8
+sleep ='horas dormidas'
+k= f"i don´t sleep {s} {sleep} in the morning"
+print(k)
+
+----
+
+
++*Out[37]:*+
+----
+i don´t sleep 8 horas dormidas in the morning
+----
+
+= practice 7 ``More Printing''
+
+It’s time to practice and test what you learned so far
+
+
++*In[61]:*+
+[source, ipython3]
+----
+end1 = 'i'
+end2 = 'n'
+end3 = 'e'
+end4 = 'd'
+end5 = 'f'
+end6 = 'o'
+
+print(f"{end1}´m a person that") 
+print(end2 + end3 + end3 + end4) 
+print(end5 + end6 + end6 + end4)
+----
+
+
++*Out[61]:*+
+----
+i´m a person that
+need
+food
+----
+
+= practice 8 ``Printing, Printing''
+
+
+
+
++*In[1]:*+
+[source, ipython3]
+----
+formatter = "{} {} {} {}"
+
+print(formatter.format(1, 2, 3, 4))
+print(formatter.format("one", "two", "three", "four"))
+print(formatter.format(True, False, False, True))
+print(formatter.format(formatter, formatter, formatter, formatter))
+print(formatter.format(
+"Try your",
+"Own text here",
+"Maybe a poem",
+"Or a song about fear"
+))
+----
+
+
++*Out[1]:*+
+----
+1 2 3 4
+one two three four
+True False False True
+{} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}
+Try your Own text here Maybe a poem Or a song about fear
+----
+
+= practice 9 ``Printing, Printing, Printing''
+
+Everything goes slowly the only thing you should do is to focus on what
+you learn
+
+
++*In[20]:*+
+[source, ipython3]
+----
+states = "san luis oaxaca tamaulipas nuevo leon"
+country = "EUA\nMexico\nJAPAN\nCOLOMBIA\nFRANCE"
+
+print("MEXICAN STATES : ", states)
+print("SOME COUNTRIES: ", country)
+----
+
+
++*Out[20]:*+
+----
+MEXICAN STATES :  san luis oaxaca tamaulipas nuevo leon
+SOME COUNTRIES:  EUA
+Mexico
+JAPAN
+COLOMBIA
+FRANCE
+----
+
+= practice 10 ``What Was That?''
+
+Now what we will do is try to make a program with double and triple
+quotes for example ``Carlos'' is ``playing'' and what is special about
+this is that the software is difficult to identify which of the texts
+you are enclosing in quotes let’s see the following example.
+
+
++*In[21]:*+
+[source, ipython3]
+----
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
+
+fat_cat = """
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+
+print(tabby_cat)
+print(persian_cat)
+print(backslash_cat)
+print(fat_cat)
+----
+
+
++*Out[21]:*+
+----
+	I'm tabbed in.
+I'm split
+on a line.
+I'm \ a \ cat.
+
+I'll do a list:
+	* Cat food
+	* Fishies
+	* Catnip
+	* Grass
+
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
